@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--roboto);
+}
+
+.title-text{
+    font: normal bold 50px/72px var(--roboto);
+}
+
+.para {
+    font: normal 500 14px/20px var(--roboto);
+    color: var(--text-color);
+    word-spacing: 3px;
+}
+
+.section-padding{
+    padding: 1rem 10rem;
+}
+
+@media (max-width: 1150px){
+    .section-padding{
+        padding: 1rem 5rem;
+    }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+    .section-padding{
+        padding: 1rem;
+    }
+}

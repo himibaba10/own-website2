@@ -1,0 +1,327 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Variable Fonts */
+@import url(./_variables.css);
+
+/* Global Styling */
+@import url(./_global.css);
+
+/* Style Main Area */
+
+main {
+    overflow-x: hidden;
+}
+
+/* Style Header Area */
+
+header {
+    z-index: 2;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link{
+    color: var(--title-color);
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    font-weight: 500;
+}
+
+header .navbar .navbar-nav .nav-item .active{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Style Banner Area */
+
+.banner-section{
+    background: url(../images/banner/home-banner.png) no-repeat;
+    background-position: 0% 50%;
+}
+
+.banner-section h3::after{
+    content: "";
+    height: 2px;
+    width: 40%;
+    background-color: black;
+    display: inline-block;
+    margin-left: 20px;
+    transform: translateY(-10px);
+}
+
+.banner-section h3{
+    font-size: 2.3rem;
+}
+
+.banner-section h1{
+    font-size: 5rem;
+}
+
+.banner-section h4{
+    font-size: 1.7rem;
+}
+
+.banner-section img{
+    width: 90rem;
+    padding: 7rem 0;
+    margin-left: 30px;
+}
+
+.button{
+    padding: 0.75rem 2.6rem;
+    border-radius: 4px;
+    font: normal 500 16px/20px var(--roboto);
+    border: 3px solid transparent;
+    position: relative;
+}
+
+.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+    transition: background 0.6s ease;
+}
+
+
+.primary-button:hover{
+    background: whitesmoke;
+    color: black;
+    background-clip: padding-box;
+}
+
+.primary-button::after, .primary-button2::after{
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    right: -2px;
+    left: -2px;
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    content: "";
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.primary-button2 {
+    background: white;
+    color: black;
+    background-clip: padding-box;
+    transition: background 0.6s ease;
+}
+
+.primary-button2:hover {
+    background: var(--gradient-color);
+    color: white;
+    background-clip: padding-box;
+}
+
+/* Style About us area */
+
+.about-section h1.about-title {
+    font: normal bold 35px var(--roboto);
+    color: var(--title-color);
+    letter-spacing: 15px;
+}
+
+/* Style Brand Section */
+
+.image-col {
+    margin: 0.5rem 0;
+}
+
+.image-col > div {
+    width: 100%;
+    padding: 1.2rem 0;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.image-col > div > img {
+    padding: 0 2rem;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.image-col > div:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.image-col > div:hover > img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+.experience-area {
+    background: url(../images/client-info-bg.png) no-repeat 55px -5px;
+    padding-left: 160px;
+    position: relative;
+}
+
+.experience {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.experience > .year {
+    font: normal bold 70px/75px var(--roboto);
+    color: var(--primary-color2);
+    margin-right: 10px;
+}
+
+.experience > .year-description {
+    font: normal bold 25px/29px var(--roboto);    
+}
+
+.experience-area .bg-color {
+    position: absolute;
+    top: -20px;
+    left: 120px;
+    width: 400px;
+    height: 400px;
+    background: #e029290a;
+    z-index: -1;
+}
+
+.call-area > div > a {
+    text-decoration: none;
+    font: normal bold 30px/40px var(--roboto);
+}
+
+.call-area > div > span {
+    font: normal 400 15pxvar(--roboto);
+    color: var(--text-color);
+}
+
+/* Style Services Section */
+
+.services-area-section {
+    margin-top: 120px;
+}
+
+.services-area-section > p {
+    font: normal 400 15px var(--roboto);
+    color: var(--text-color);
+}
+
+.services-area-section .single-service {
+    background-color: #F9FCFF;
+    padding: 3rem 0;
+}
+
+.services-area-section .single-service > img {
+    width: 70px;
+}
+
+/* Style Project section */
+
+.project-area-section .button-group button {
+    border: none;
+    background: transparent;
+    font: normal 500 14px/80px var(--roboto);
+}
+
+.project-area-section .button-group button + button {
+    margin-left: 25px;
+}
+
+.project-area-section .single-image img{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.project-area-section .single-image img:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+.project-area-section .single-image > h4 {
+    font: normal 700 26px/30px var(--roboto);
+}
+
+/* Style About Me Section */
+
+.about-me-section .owl-carousel .row {
+    margin: 1.4rem 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.about-me-section .owl-carousel .row img{
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.about-me-section .owl-carousel .owl-dots .owl-dot.active span {
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-color);
+}
+
+/* Style Form Section */
+
+.form-section {
+    margin-top: 90px;
+}
+
+.form-section > div {
+    background: url(../images/subscribe-bg.png) no-repeat center;
+    border-radius: 5px;
+    padding: 100px 0;
+}
+
+.form-section > div > h4 {
+    font: normal 700 32px/32px var(--roboto);
+}
+
+.form-section .form-input {
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.form-section .form-input::placeholder {
+    color: white;
+}
+
+.form-section .form-button {
+    background-color: whitesmoke;
+    border: 1px solid green;
+}
+
+/* Style Footer Section */
+
+footer {
+    background: url(../images/footer-bg.png) no-repeat;
+    margin-top: 50px;
+}
+
+footer > h5 {
+    font: normal 500 25px/30px var(--roboto);
+    margin: 20px 0;
+}
+
+footer a{
+    margin: 0 15px;
+    font-size: 23px;
+    color: var(--border-color);
+}
+
+
+footer a:hover {
+     color: var(--primary-color);
+}
+
+/* Media Query */
+
+@media (min-width: 992px) {
+    
+}
